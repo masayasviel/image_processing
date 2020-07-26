@@ -1,4 +1,4 @@
-file_pass = "./monokuro.bmp"
+file_pass = "./outputImages/monokuro.bmp"
 
 f = File.open(file_pass, "rb")
 data = f.read
