@@ -29,7 +29,7 @@ monokuro.print [height].pack("i*")
 monokuro.print [1, color_bit].pack("s*")
 monokuro.print [0, 0, 0, 0, 0, 0].pack("i*")
 
-header_size.step(height*width*3, 3) do |i|
+header_size.step(height*width*3+header_size-1, 3) do |i|
     3.times do
         monokuro.print [[
             data[i],
